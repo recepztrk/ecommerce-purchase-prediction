@@ -79,35 +79,51 @@ python -m src.evaluation.evaluate
 
 ## Sonuçlar
 
-### Model Performansı
+### 🚀 v2.0 (Current - Improved)
+
+| Model | Val ROC-AUC | Test ROC-AUC | Improvement vs v1.0 |
+|-------|-------------|--------------|---------------------|
+| **LightGBM v2** | **0.6596** | **0.6107** | **+2.88%** ⭐ |
+| XGBoost | 0.6578 | 0.6098 | +2.73% |
+| Ensemble | 0.6593 | 0.6107 | +2.88% |
+
+**Key Improvements in v2.0:**
+- ✅ 42 → 59 features (+17 advanced features)
+- ✅ ROC-AUC: 0.5936 → 0.6107 (+2.88%)
+- ✅ 3 models (LightGBM + XGBoost + Ensemble)
+- ✅ Optimized hyperparameters
+
+### 📊 v1.0 (Baseline)
 
 | Model | Val ROC-AUC | Test ROC-AUC | Test PR-AUC | Test F1 |
 |-------|-------------|--------------|-------------|---------|
 | Naive Baseline | 0.5000 | 0.5000 | 0.4273 | 0.0000 |
 | Logistic Regression | 0.6251 | 0.5833 | 0.4938 | 0.5548 |
-| **LightGBM** | **0.6492** | **0.5936** | **0.4838** | **0.6272*** |
+| LightGBM v1 | 0.6492 | 0.5936 | 0.4838 | 0.6272 |
 
-*Optimal threshold (0.40) ile
+### 🆕 New Features (v2.0)
 
-### En İyi Model: LightGBM
+**Sequence Features:**
+- Event timing patterns, acceleration metrics
 
-**Test Set Performansı (threshold=0.40):**
-- **ROC-AUC:** 0.5936
-- **PR-AUC:** 0.4838
-- **F1 Score:** 0.6272
-- **Precision:** 0.4577
-- **Recall:** 0.9960
+**Price Trajectory:**
+- Price trends, volatility, ascending patterns
 
-**Top 5 Önemli Özellikler:**
-1. `ts_day_mean` - Oturum günü
-2. `events_per_minute` - Oturum yoğunluğu
-3. `product_diversity` - Ürün çeşitliliği
-4. `ts_month_mean` - Oturum ayı
-5. `session_duration_seconds` - Oturum süresi
+**Behavioral Scores:**
+- Focus score, exploration score, decisiveness score
 
-### Grafikler
+**Temporal Patterns:**
+- Hour consistency, time gap statistics
+
+### Grafikler ve Raporlar
 
 Detaylı grafikler ve analizler için `reports/` klasörüne bakın:
+
+**v2.0 (Current):**
+- `model_comparison_v2.png` - Model karşılaştırma eğrileri
+- `improvement_report_v2.md` - Detaylı iyileştirme raporu
+
+**v1.0 (Baseline):**
 - `roc_pr_curves.png` - ROC ve PR eğrileri
 - `confusion_matrices.png` - Confusion matrix'ler
 - `feature_importance.png` - Özellik önem sıralaması
