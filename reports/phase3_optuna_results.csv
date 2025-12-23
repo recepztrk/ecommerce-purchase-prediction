@@ -1,0 +1,4 @@
+algorithm,val_auc,test_auc,best_params
+ExtraTrees (Optimized),0.8106001826040475,0.7750696748796054,"{'n_estimators': 605, 'max_depth': 23, 'min_samples_split': 35, 'min_samples_leaf': 8, 'max_features': 'sqrt'}"
+XGBoost (Optimized),0.8114115129369884,0.7552776742355739,"{'max_depth': 5, 'learning_rate': 0.06000653836229909, 'subsample': 0.7171001122310617, 'colsample_bytree': 0.7023021695122293, 'min_child_weight': 5, 'gamma': 3.85929863451605}"
+LightGBM (Optimized),0.8108453346284893,0.754087855950904,"{'num_leaves': 64, 'learning_rate': 0.06526648148620257, 'feature_fraction': 0.7293547162918581, 'bagging_fraction': 0.8447016150326782, 'bagging_freq': 7, 'max_depth': 5, 'min_child_samples': 15}"

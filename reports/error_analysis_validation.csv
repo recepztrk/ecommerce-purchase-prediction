@@ -1,6 +1,0 @@
-,n_events,n_events,price_mean,price_mean,session_duration_seconds,session_duration_seconds,y_pred_proba,y_pred_proba
-,mean,std,mean,std,mean,std,mean,std
-error_type,,,,,,,,
-Correct,1.575,2.023,303.822,337.448,184.61,6853.911,0.447,0.031
-False Negative,3.711,6.573,271.761,336.064,75.499,117.345,0.383,0.009
-False Positive,1.396,1.243,267.447,331.335,268.616,10747.11,0.449,0.02
