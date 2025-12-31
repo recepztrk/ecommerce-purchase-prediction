@@ -213,7 +213,7 @@ v3.0'dan sonra, performansı daha da artırmak için **10 sofistike yaklaşım**
 
 ## 📊 Görseller
 
-### Profesyonel Görseller (300 DPI, sunum-hazır)
+### Profesyonel Görseller
 
 `reports/final_visuals/` klasöründe 10 profesyonel görsel:
 
@@ -585,16 +585,14 @@ Bu projeyi kullanırsanız veya faydalı bulursanız:
 - ✅ Kod temizliği ve organizasyon (4.4GB'dan 2.2GB'ye düşürüldü)
 - ✅ Tüm denemeler tekrar üretilebilir
 
-### v2.0 - [Tarih]
+### v2.0
 - Gelişmiş özellikler ve hiperparametre tuning eklendi
 - Test AUC: 0.6107 (+%2.88 v1.0'a göre)
 
-### v1.0 - [Tarih]
+### v1.0
 - İlk baseline implementasyonu
 - Test AUC: 0.5936
 
 ---
 
-**❤️ ile Python, LightGBM ve çok fazla sistematik deney kullanılarak inşa edilmiştir.**
-
-**Unutma: Bazen basit çözüm en iyi çözümdür.** 🚀
+**Dipnot: Bazen basit çözüm en iyi çözümdür.** 🚀
